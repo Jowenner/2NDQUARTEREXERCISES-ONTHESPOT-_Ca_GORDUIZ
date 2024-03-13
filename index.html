@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangling</title>
+</head>
+<body>
+    <script>
+
+    function prompter(){
+    while(true){
+        var a = prompt("Num 1");
+        if(isNaN(a))
+        {
+            alert("Try Again!");
+        }
+        else
+        {
+            break;
+        }
+
+    }
+    while(true){
+        var b = prompt("Num 2");
+        if(isNaN(b))
+        {
+            alert("Try Again!");
+        }
+        else
+        {
+            break;
+        }
+
+    }
+    while(true){
+        var c = prompt("Num 3");
+        if(isNaN(c))
+        {
+            alert("Try Again!");
+        }
+        else
+        {
+            break;
+        }
+
+    }
+
+    determineTriangle(a,b,c);
+    }
+
+
+    function determineTriangle(a,b,c){
+        if(a==b && b==c){
+            return window.alert("The Triangle is Equilateral");
+        }
+        else if(a==b){
+            return window.alert("The Triangle is Isoceles");
+        }
+        else if(b==c){
+            return window.alert("The Triangle is Isoceles");
+        }
+        else if(c==a){
+            return window.alert("The Triangle is Isoceles");
+        }
+        else{
+            return window.alert("The Triangle is Scalene");
+        }
+    }
+    prompter();
+
+    </script>
+
+</body>
+</html>
